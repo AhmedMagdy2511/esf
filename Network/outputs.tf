@@ -10,6 +10,9 @@ output "private_security" {
 output "pulic_subnet" {
   value = aws_subnet.terraformSubnet1.id
 }
+output "private_subnet" {
+  value = aws_subnet.terraformSubnet1Private.id
+}
 # output "ec2" {
 #   value = aws_instance.terraformInstance1.id
 # }

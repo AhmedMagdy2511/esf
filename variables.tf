@@ -6,10 +6,6 @@ variable "vpc_cidr" {
 }
 
 variable "subnet_cidr" {
-    type = string
-  
-}
-variable "AMI" {
-    type = string
-  
+  type = string
+
 }
