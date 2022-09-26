@@ -1,0 +1,13 @@
+{
+    "Version": "2022-09-26",
+    "Statement": [
+      {
+        "Effect": "Allow",
+              "Action": [
+                  "ses:SendEmail",
+                  "ses:SendRawEmail"
+              ],
+    "Resource": "*"
+      }
+    ]
+  }  

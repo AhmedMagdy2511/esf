@@ -1,9 +1,9 @@
 var aws = require("aws-sdk");
-var ses = new aws.SES({ region: "us-west-2" });
+var ses = new aws.SES({ region: "us-east-1" });
 exports.handler = async function (event) {
   var params = {
     Destination: {
-      ToAddresses: ["RecipientEmailAddress", ...],
+      ToAddresses: ["elmar7om123@gmail.com"],
     },
     Message: {
       Body: {
@@ -12,7 +12,7 @@ exports.handler = async function (event) {
 
       Subject: { Data: "Test Email" },
     },
-    Source: "SourceEmailAddress",
+    Source: "a7mad7mada102@gmail.com",
   };
  
   return ses.sendEmail(params).promise()

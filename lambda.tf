@@ -10,7 +10,7 @@ resource "aws_lambda_function" "stateFile_triger" {
 
   filename      = data.archive_file.archive_lambda_file.output_path
   function_name = "stateFile_triger"
-  role          = aws_iam_role.iam_for_lambda.arn
+  role          = aws_iam_role.role_lambda.assume_role_policy
   handler       = "index.test"
-  runtime = "nodejs12.x"
+  runtime       = "nodejs12.x"
 }
