@@ -1,11 +1,11 @@
 data "aws_ami" "linux" {
   most_recent = true
-  
+
   filter {
     name   = "name"
     values = ["amzn-ami-hvm-*-x86_64-gp2"]
   }
-   filter {
+  filter {
     name   = "root-device-type"
     values = ["ebs"]
   }
@@ -13,7 +13,7 @@ data "aws_ami" "linux" {
     name   = "virtualization-type"
     values = ["hvm"]
   }
-  owners      = ["amazon"] # Canonical
+  owners = ["amazon"] # Canonical
 
 }
 # for retriving ubuntu ami
